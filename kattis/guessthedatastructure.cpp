@@ -15,8 +15,11 @@ int main()
 	{
 		int t;
 		cin>>t;
-		cout<<t;
 		int a,b;
+		int a1,b1,c1;
+		a1=true;
+		b1=true;
+		c1=true;
 		for(int j=0;j<t;j++)
 		{
 			cin>>a>>b;
@@ -28,24 +31,39 @@ int main()
 			}
 			else
 			{
-				bool a1,b1,c1;
-				if(s.top()==b)
+				if(s.top()==b and a1==true)
 					a1=true;
-				if(q.front()==b)
+				else
+					a1=false;
+				if(q.front()==b and b1==true)
 					b1=true;
-				if(pq.top()==b)
+				else
+					b1=false;
+				if(pq.top()==b and c1==true)
 					c1=true;
-					
-				if(a1==true and b1==false and c1==false)
-					cout<<"stack";
-				else if(a1==false and b1==true and c1==false)
-					cout<<"queue";
-				else if(a1==false and b1==false and c1==true)
-					cout<<"p queue";
+				else
+					c1=false;
+			}
+		}		
+				cout<<a1<<b1<<c1;
+				if(a1==true)
+					if(b1==true or c1==true)
+						cout<<"more";
+					else
+						cout<<"stack";
+				else if(b1==true)
+					if(b1==true or c1==true)
+						cout<<"more";
+					else
+						cout<<"queue";
+				else if(c1==true)
+					if(b1==true or c1==true)
+						cout<<"more";
+					else
+						cout<<"pq";
 				else
 					cout<<"imp";
-			}
-		}
 	}
+		
 	return 0;
 }
