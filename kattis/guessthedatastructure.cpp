@@ -9,7 +9,7 @@ int main()
 {
 	stack<int> s;
 	queue<int> q;
-	priority_queue<int, vector<int>> pq;
+	priority_queue<int, vector<int> > pq;
 	
 	for(int i=0; i<1; i++)
 	{
@@ -20,17 +20,25 @@ int main()
 		a1=true;
 		b1=true;
 		c1=true;
+		int flag=0;
+
 		for(int j=0;j<t;j++)
 		{
 			cin>>a>>b;
+
 			if(a==1)
 			{
 				s.push(b);
 				q.push(b);
 				pq.push(b);
+
+
 			}
 			else
 			{
+				
+				flag=1;
+
 				if(s.top()==b and a1==true)
 					a1=true;
 				else
@@ -43,26 +51,34 @@ int main()
 					c1=true;
 				else
 					c1=false;
+
+				s.pop();
+				q.pop();
+				pq.pop();
+			
 			}
 		}		
-				cout<<a1<<b1<<c1;
+
 				if(a1==true)
 					if(b1==true or c1==true)
-						cout<<"more";
+						cout<<"not sure";
 					else
 						cout<<"stack";
 				else if(b1==true)
-					if(b1==true or c1==true)
-						cout<<"more";
+					if(a1==true or c1==true)
+						cout<<"not sure";
 					else
 						cout<<"queue";
 				else if(c1==true)
-					if(b1==true or c1==true)
-						cout<<"more";
+					if(b1==true or a1==true)
+						cout<<"not sure";
 					else
-						cout<<"pq";
+						cout<<"priority queue";
 				else
-					cout<<"imp";
+					cout<<"impossible";
+			
+				if(flag==0)
+					cout<<"impossible";
 	}
 		
 	return 0;
