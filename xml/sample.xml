@@ -1,0 +1,12 @@
+<?xml version = "1.0"?>
+
+  <article>
+      <title>Sample XML</title>
+      <date>May 17, 2019</date>
+      <author>
+          <firstname>John</firstname>
+          <lastname>Doe</lastname>
+      </author>
+      <summary>XML is easy, but at the same time, it's not.</summary>
+      <content>Sample content</content>
+  </article>
