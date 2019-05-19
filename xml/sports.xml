@@ -1,0 +1,21 @@
+<?xml version = "1.0"?>
+<?xml-stylesheet type = "text/xsl" href = "sports.xsl" ?>
+
+<!-- Sports database -->
+
+<sports>
+  <game id="210">
+    <name>Cricket</name>
+    <paragraph>
+      Popular amoung Indians.
+    </paragraph>
+  </game>
+
+  <game id="220">
+    <name>Basketball</name>
+    <paragraph>
+      More popular in America.
+    </paragraph>
+  </game>
+
+</sports>

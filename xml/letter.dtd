@@ -1,0 +1,16 @@
+<!-- DTD document for letter.xml -->
+
+<!ELEMENT letter (contact,salutation,subject,body,closing,signature) >
+
+<!ELEMENT contact (name,phone,flag) >
+  <!ATTLIST contact type CDATA #IMPLIED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT flag EMPTY>
+  <!ATTLIST flag gender (M | F) "M" >
+<!ELEMENT salutation (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT closing (#PCDATA)>
+<!ELEMENT signature (#PCDATA)>

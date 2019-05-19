@@ -1,0 +1,21 @@
+<?xml version = "1.0"?>
+<!-- XML Schema document for book.xml -->
+
+<schema
+  xmlns = "urn:ash:xmlSchema"
+  xmlns:library = "urn:ash:library"
+  targetNamespace = "urn:ash:library" >
+
+  <element name = "books" type = "library:booksType" />
+  <complexType name = "booksType">
+    <sequence>
+      <element name = "book" type = "library:singleBookType" minOccurs = "1" maxOccurs = "unbounded" />
+    </sequence>
+  </complexType>
+
+  <complexType>
+    <sequence>
+      <element name = "title" type = "string" />
+    </sequence>
+  </complexType>
+</schema>

@@ -1,0 +1,18 @@
+<?xml version = "1.0"?>
+
+<!-- A letter marked up with XML -->
+<!DOCTYPE letter SYSTEM "letter.dtd" >
+<letter>
+  <contact>
+    <name>Ash</name>
+    <phone>1234567890</phone>
+    <flag gender="M" />
+  </contact>
+  <salutation>Respected Sir,</salutation>
+  <subject>Reimbursment Request</subject>
+  <body>
+    This letter is for the request of reimbursment for the business trip on 1/1/19. PFA the receipts for the entire trip.
+  </body>
+  <closing>Regards</closing>
+  <signature>Ash</signature>
+</letter>

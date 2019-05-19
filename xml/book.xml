@@ -1,0 +1,13 @@
+<?xml version = "1.0"?>
+
+<!-- Book list marked up as XML -->
+
+<library:books
+  xlmns:library = "urn:ash:library" >
+  <book>
+    <title>Python for beginners</title>
+  </book>
+  <book>
+    <title>XML for all</title>
+  </book>
+</library:books>

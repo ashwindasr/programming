@@ -1,0 +1,17 @@
+<?xml version = "1.0"?>
+
+<!-- Demonstrating default namespaces -->
+<directory
+  xmlns = "urn:ash:textInfo"
+  xmlns:image = "urn:ash:imageInfo">
+
+<!-- Part of default namespace -->
+  <file filename = "text.txt">
+    <description>Just a normal file</description>
+  </file>
+
+<!-- Part of custom namespace image -->
+  <image:file filename = "image.jpg">
+    <image:description>Just a normal image</image:description>
+  </image:file>
+</directory>

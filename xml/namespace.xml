@@ -1,0 +1,16 @@
+<?xml version = "1.0"?>
+
+<!-- Demonstrating namespaces -->
+<text:directory
+  xmlns:text = "urn:ash:textInfo"
+  xmlns:image = "urn:ash:imageInfo">
+
+  <text:file filename = "book.xml">
+    <text:description>Book list</text:description>
+  </text:file>
+
+  <image:file filename = "image.jpg">
+    <image:description>A pic</image:description>
+    <image:size width="200" height="200" />
+  </image:file>
+<text:directory>
