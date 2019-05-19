@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!-- jQuery AJAX trial -->
+
+<html>
+  <head>
+    <title>AJAX button</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function ()
+      {
+        $("#click").click(function(){
+          $("#container").load("data.txt");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id = "container">
+      <p>This is the initial text</p>
+    </div>
+    <button id = "click">click here to load</button>
+  </body>
+
+</html>
