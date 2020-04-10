@@ -1,1 +1,0 @@
-Programs while learning Go.
